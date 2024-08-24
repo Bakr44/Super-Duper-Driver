@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+Test set: com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 3, Errors: 4, Skipped: 0, Time elapsed: 67.072 s <<< FAILURE! - in com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests
+testLargeUpload  Time elapsed: 8.869 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testLargeUpload(CloudStorageApplicationTests.java:390)
+
+testEditNote  Time elapsed: 10.264 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#t\-note\-title"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAKR', ip: '169.254.85.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\V33\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50728}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a8d98e4ea2cf71ae7a67ecb2226c81d
+*** Element info: {Using=id, value=t-note-title}
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testAddNote(CloudStorageApplicationTests.java:143)
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testEditNote(CloudStorageApplicationTests.java:150)
+
+testAddNote  Time elapsed: 2.321 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#success\-msg"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAKR', ip: '169.254.85.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\V33\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25f474d4c216fa1879dbd7535c3ea48f
+*** Element info: {Using=id, value=success-msg}
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.doMockSignUp(CloudStorageApplicationTests.java:280)
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testAddNote(CloudStorageApplicationTests.java:107)
+
+testHome  Time elapsed: 1.575 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Home> but was: <Login>
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testHome(CloudStorageApplicationTests.java:59)
+
+testBadUrl  Time elapsed: 3.249 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testBadUrl(CloudStorageApplicationTests.java:353)
+
+deleteNote  Time elapsed: 2.702 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#success\-msg"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAKR', ip: '169.254.85.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\V33\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5946099e14476fe336d404e6a08cbade
+*** Element info: {Using=id, value=success-msg}
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.doMockSignUp(CloudStorageApplicationTests.java:280)
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testAddNote(CloudStorageApplicationTests.java:107)
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.deleteNote(CloudStorageApplicationTests.java:217)
+
+testSignupLoginLogout  Time elapsed: 2.408 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#success\-msg"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BAKR', ip: '169.254.85.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\V33\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d67a7efda7b0def2ead9603e5ba289c9
+*** Element info: {Using=id, value=success-msg}
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.doMockSignUp(CloudStorageApplicationTests.java:280)
+	at com.udacity.jwdnd.course1.cloudstorage.CloudStorageApplicationTests.testSignupLoginLogout(CloudStorageApplicationTests.java:79)
+
